@@ -8,25 +8,25 @@ namespace NameSearch
 		[Test()]
 		public void VictoriaFindsVicky ()
 		{
-			Assert.IsTrue(NameSearch.GetSimilarNames("Victoria").Contains("Vicky"));
+			Assert.IsTrue(NameSearch.GetOtherFormsOfNames("Victoria").Contains("Vicky"));
 		}
 
         [Test()]
         public void victoriaFindsVicky()
         {
-            Assert.IsTrue(NameSearch.GetSimilarNames("victoria").Contains("Vicky"));
+            Assert.IsTrue(NameSearch.GetOtherFormsOfNames("victoria").Contains("Vicky"));
         }
 
         [Test()]
         public void BillDoesNotFindFrank()
         {
-            Assert.IsFalse(NameSearch.GetSimilarNames("Bill").Contains("Frank"));
+            Assert.IsFalse(NameSearch.GetOtherFormsOfNames("Bill").Contains("Frank"));
         }
 
         [Test()]
         public void FeliciaFindsFelicity()
         {
-            Assert.IsTrue(NameSearch.GetSimilarNames("Felicia").Contains("Felicity"));
+            Assert.IsTrue(NameSearch.GetOtherFormsOfNames("Felicia").Contains("Felicity"));
         }
 
         [Test()]
