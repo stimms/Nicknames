@@ -3,17 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSearch", "NameSearch\NameSearch.csproj", "{45C8C6A2-A524-4CEC-A295-D60E11683E91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4B39B65-FF33-4749-B55F-0162AFDC6EB5}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		NameSearch.vsmdi = NameSearch.vsmdi
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = NameSearch.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 		Default|Any CPU = Default|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{45C8C6A2-A524-4CEC-A295-D60E11683E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45C8C6A2-A524-4CEC-A295-D60E11683E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C8C6A2-A524-4CEC-A295-D60E11683E91}.Default|Any CPU.ActiveCfg = Debug|Any CPU
 		{45C8C6A2-A524-4CEC-A295-D60E11683E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C8C6A2-A524-4CEC-A295-D60E11683E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D67D67C-9151-46A6-ACC4-5E7576FCBD99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = NameSearch\NameSearch.csproj
