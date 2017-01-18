@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>nicknames</id>
+    <version>1.0</version>
+    <title>NickNames</title>
+    <authors>Simon Timms</authors>
+    <owners>Simon Timms</owners>
+    <licenseUrl>https://github.com/stimms/Nicknames/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/stimms/Nicknames</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A small library which provides for name matching using hypocorism</description>
+    <releaseNotes>First version to make it to nuget</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>human name parsing nickname</tags>
+  </metadata>
+</package>

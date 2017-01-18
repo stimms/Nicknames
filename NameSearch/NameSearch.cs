@@ -9,7 +9,7 @@ namespace NameSearch
 		public static List<String> GetOtherFormsOfNames(String nameToCheck)
 		{
             List<string> returnValue = new List<string>();
-            foreach(String[] nameset in Names.names.Where(b => b.CaseInsensitiveContains(nameToCheck)))
+            foreach(var nameset in Names.names.Where(b => b.Any(c=>c.Equals(nameToCheck, StringComparison.InvariantCultureIgnoreCase ))))
             {
                 returnValue.AddRange(nameset);
             }
@@ -18,7 +18,7 @@ namespace NameSearch
 
         public static bool AreTheSameName(string baseName, string nameToCheck)
         {
-            if (GetOtherFormsOfNames(baseName).CaseInsensitiveContains(nameToCheck))
+            if (GetOtherFormsOfNames(baseName).Any(x=>x.Equals(nameToCheck, StringComparison.InvariantCultureIgnoreCase)))
                 return true;
             return false;
         }
